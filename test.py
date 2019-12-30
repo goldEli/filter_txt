@@ -23,6 +23,5 @@ test_data = pd.DataFrame([
 X_input_termcounts = vectorizer.transform(test_data)
 X_input_tfidf = tfidf_transformer.transform(X_input_termcounts)
 
-# print(X_input_tfidf)
-
+print("垃圾短信测试：（0表示正常短信，1表示垃圾短信）")
 print(loaded_model.predict(X_input_tfidf))
